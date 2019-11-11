@@ -1,6 +1,6 @@
 operators = "+-*/"
-a_max = 100
-b_max = 100
+a_max = 50
+b_max = 50
 operators = "+-*/"
 
 
