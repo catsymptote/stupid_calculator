@@ -10,8 +10,8 @@ def write_calc(operators, a_min, a_max, b_min, b_max):
     calc_str += '\tif op=="/" and b==0:\n'
     calc_str += '\t\treturn None\n'
     for op in operators:
-        for a in range(a_min, a_max):
-            for b in range(b_min, b_max):
+        for a in range(a_min, a_max+1):
+            for b in range(b_min, b_max+1):
                 if not(op=="/" and b==0):
                     calc_str += '\tif a=={0} and op=="{1}" and b=={2}:\n'.format(a, op, b)
                     calc_str += '\t\treturn {0}{1}{2}\n'.format(a, op, b)
