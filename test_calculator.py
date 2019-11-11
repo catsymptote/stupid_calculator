@@ -1,10 +1,10 @@
 # Generate the calculator.
 from generator import generate
 operators = "+-*/"
-a_min = -5
-a_max = 5
-b_min = -5
-b_max = 5    
+a_min = -10
+a_max = 10
+b_min = -10
+b_max = 10  
 generate(operators=operators, a_min=a_min, a_max=a_max, b_min=b_min, b_max=b_max)
 
 # Load calculator.
