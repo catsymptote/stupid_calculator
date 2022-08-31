@@ -9,7 +9,7 @@ def calc_answer(a, op, b):
         elif op == '/':
             return a/b
         elif op == '**':
-            return a**b
+            return a ** b
         elif op == '//':
             return a // b
         elif op == '%':
@@ -43,9 +43,8 @@ def write_calc(a_min, a_max, b_min, b_max, operators=None):
         calc_str += f'\n'
 
 
-    f = open('calculator.py', 'w')
-    f.write(calc_str)
-    f.close()
+    with open('calculator.py', 'w') as fil:
+        fil.write(calc_str)
 
 
 def generate(a_min=-10, a_max=10, b_min=-10, b_max=10, operators=None):
