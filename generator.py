@@ -31,13 +31,16 @@ def write_calc(a_min, a_max, b_min, b_max, operators=None):
     #calc_str += '\treturn a, op, b\n\n\n'
     
     calc_str += 'def calc(a, op, b):\n'
-    calc_str += '\tif op=="/" and b==0:\n'
-    calc_str += '\t\treturn None\n'
+    # calc_str += '\tif (op=="/" and b==0) or (op==** and b<0):\n'
+    # calc_str += '\t\treturn None\n'
     for op in operators:
+        calc_str += f'\t# Operator: {op}\n'
+    
         for a in range(a_min, a_max+1):
             for b in range(b_min, b_max+1):
                 calc_str += f'\tif a=={a} and op=="{op}" and b=={b}:\n'
                 calc_str += f'\t\treturn {calc_answer(a, op, b)}\n'.format(a, op, b)
+        calc_str += f'\n'
 
 
     f = open('calculator.py', 'w')

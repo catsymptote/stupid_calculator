@@ -1,6 +1,5 @@
 def calc(a, op, b):
-	if op=="/" and b==0:
-		return None
+	# Operator: +
 	if a==-10 and op=="+" and b==-10:
 		return -20
 	if a==-10 and op=="+" and b==-9:
@@ -883,6 +882,8 @@ def calc(a, op, b):
 		return 19
 	if a==10 and op=="+" and b==10:
 		return 20
+
+	# Operator: -
 	if a==-10 and op=="-" and b==-10:
 		return 0
 	if a==-10 and op=="-" and b==-9:
@@ -1765,6 +1766,8 @@ def calc(a, op, b):
 		return 1
 	if a==10 and op=="-" and b==10:
 		return 0
+
+	# Operator: *
 	if a==-10 and op=="*" and b==-10:
 		return 100
 	if a==-10 and op=="*" and b==-9:
@@ -2647,6 +2650,8 @@ def calc(a, op, b):
 		return 90
 	if a==10 and op=="*" and b==10:
 		return 100
+
+	# Operator: /
 	if a==-10 and op=="/" and b==-10:
 		return 1.0
 	if a==-10 and op=="/" and b==-9:
@@ -3529,6 +3534,8 @@ def calc(a, op, b):
 		return 1.1111111111111112
 	if a==10 and op=="/" and b==10:
 		return 1.0
+
+	# Operator: **
 	if a==-10 and op=="**" and b==-10:
 		return 1e-10
 	if a==-10 and op=="**" and b==-9:
@@ -4411,6 +4418,8 @@ def calc(a, op, b):
 		return 1000000000
 	if a==10 and op=="**" and b==10:
 		return 10000000000
+
+	# Operator: //
 	if a==-10 and op=="//" and b==-10:
 		return 1
 	if a==-10 and op=="//" and b==-9:
@@ -5293,6 +5302,8 @@ def calc(a, op, b):
 		return 1
 	if a==10 and op=="//" and b==10:
 		return 1
+
+	# Operator: %
 	if a==-10 and op=="%" and b==-10:
 		return 0
 	if a==-10 and op=="%" and b==-9:
@@ -6175,3 +6186,4 @@ def calc(a, op, b):
 		return 1
 	if a==10 and op=="%" and b==10:
 		return 0
+
